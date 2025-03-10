@@ -2954,7 +2954,7 @@ export class Engine extends IEngine {
       if (property === null || property === undefined) {
         const { message } = getInternalError(
           "MISSING_OR_INVALID",
-          `${type} must be contain an existing value for each key. Received: ${property} for key ${
+          `${type} must contain an existing value for each key. Received: ${property} for key ${
             Object.keys(properties)[index]
           }`,
         );

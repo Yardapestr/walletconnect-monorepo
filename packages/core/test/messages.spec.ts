@@ -134,7 +134,7 @@ describe("Messages", () => {
     });
   });
 
-  describe.only("getWithoutAck", () => {
+  describe("getWithoutAck", () => {
     it("returns an empty map if no topics are provided", () => {
       expect(messageTracker.getWithoutAck([])).to.deep.equal({});
     });

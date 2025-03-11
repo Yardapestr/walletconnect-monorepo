@@ -15,7 +15,11 @@ export abstract class IMessageTracker {
 
   public abstract init(): Promise<void>;
 
-  public abstract set(topic: string, message: string, direction?: "inbound" | "outbound"): Promise<string>;
+  public abstract set(
+    topic: string,
+    message: string,
+    direction?: "inbound" | "outbound",
+  ): Promise<string>;
 
   public abstract get(topic: string): MessageRecord;
 
